@@ -1,4 +1,8 @@
 import React from "react";
+import location from "../../assets/icons/location.png";
+import stethoscope from "../../assets/icons/stethoscope.png";
+import user from "../../assets/icons/user.png";
+import invoice from "../../assets/icons/invoice.png";
 import "./Home.css";
 const Home = () => {
   return (
@@ -8,11 +12,21 @@ const Home = () => {
       </h2>
       <div className="boxes">
         <div className="box bg-green-500 text-xl text-white">
-          Find a location
+          <img className="icon" src={location} alt="" />
+          <h2> Find a location</h2>
         </div>
-        <div className="box bg-blue-500 text-xl text-white">Find a doctor</div>
-        <div className="box bg-sky-500 text-xl text-white">Patient Portal</div>
-        <div className="box bg-cyan-500 text-xl text-white">Pay my bill</div>
+        <div className="box bg-blue-500 text-xl text-white">
+          <img className="icon" src={stethoscope} alt="" />
+          <h2>Find a doctor</h2>
+        </div>
+        <div className="box bg-sky-500 text-xl text-white">
+          <img className="icon" src={user} alt="" />
+          <h2>Patient Portal</h2>
+        </div>
+        <div className="box bg-cyan-500 text-xl text-white">
+          <img className="icon" src={invoice} alt="" />
+          <h2>Pay my bill</h2>
+        </div>
       </div>
     </div>
   );
