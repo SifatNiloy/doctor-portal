@@ -6,12 +6,10 @@ import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 
 function App() {
   return (
-    <div className="App">
-      <div className="max-w-[1440px] mx-auto text-accent">
-        <AuthProvider>
-          <RouterProvider router={router} />
-        </AuthProvider>
-      </div>
+    <div className="max-w-[1440px] mx-auto text-accent">
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
     </div>
   );
 }
