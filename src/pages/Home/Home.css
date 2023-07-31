@@ -4,7 +4,7 @@ body {
 }
 .welcome-text {
   color: white;
-  text-shadow: 5px 1px 10px rgb(53, 53, 53);
+  text-shadow: 5px 1px 15px rgb(53, 53, 53);
 }
 .boxes {
   padding: 10% 20%;

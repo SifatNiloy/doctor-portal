@@ -8,3 +8,7 @@
   height: 5px; /* Adjust the height of the line as per your preference */
   background-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff); /* Use your desired gradient colors */
 }
+body{
+    color: #415b72;
+    
+}

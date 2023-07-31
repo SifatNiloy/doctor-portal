@@ -19,7 +19,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 py-8">
       <div className="gradient-line"></div>
       <div className="navbar-start">
         <div className="dropdown">
@@ -46,16 +46,16 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-2xl text-blue-800">Doctor Portal</a>
+        <a className="btn btn-ghost normal-case text-2xl text-blue-800">
+          Morden Medicare <br /> resource portal
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-lg">
+        <ul className="menu menu-horizontal px-1 text-xl font-medium">
           {menuItems}
         </ul>
       </div>
-      <div className="navbar-end">
-        {/* <a className="btn">Button</a> */}
-      </div>
+      <div className="navbar-end">{/* <a className="btn">Button</a> */}</div>
     </div>
   );
 };

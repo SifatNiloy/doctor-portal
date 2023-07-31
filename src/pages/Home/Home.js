@@ -7,8 +7,8 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
-      <h2 className="text-5xl p-8 welcome-text">
-        Welcome to doctors portal. How can we help?
+      <h2 className="text-6xl p-8 welcome-text">
+        Welcome to doctors portal. <br /> How can we help?
       </h2>
       <div className="boxes">
         <div className="box bg-green-500 text-xl text-white">
