@@ -1,12 +1,12 @@
 .home {
-  background-image: url("../../../assets/images/home-doctor.jpg");
+  background-image: url(../../../assets/images/banner-img.png);
   height: 700px;
 }
 .welcome-text {
-  color: white;
-  text-shadow: 5px 1px 15px rgb(53, 53, 53);
+  /* text-shadow: 1px 1px 50px rgb(53, 53, 53); */
 }
 .boxes {
+  margin-top: 400px;
   padding: 10% 20%;
   display: grid;
   grid-template-columns: repeat(4, 0.5fr);

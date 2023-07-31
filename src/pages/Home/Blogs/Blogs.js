@@ -2,8 +2,8 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div>
-      <h4 className="text-3xl">Blogs</h4>
+    <div className="my-24 mt-80">
+      <h4 className="text-3xl text-center">Blogs</h4>
     </div>
   );
 };
