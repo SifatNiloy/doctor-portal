@@ -1,18 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./pages/Shared/Navbar/Navbar";
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Footer from "./pages/Shared/Footer/Footer";
+import { router } from "./Routes/Routes";
+import { RouterProvider } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-      </Routes>
-      <Footer/>
+      <div className="max-w-[1440px] mx-auto text-accent">
+        <RouterProvider router={router} />     
+      </div>
     </div>
   );
 }

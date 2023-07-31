@@ -1,8 +1,8 @@
 import React from "react";
-import location from "../../assets/icons/location.png";
-import stethoscope from "../../assets/icons/stethoscope.png";
-import user from "../../assets/icons/user.png";
-import invoice from "../../assets/icons/invoice.png";
+import location from "../../../assets/icons/location.png";
+import stethoscope from "../../../assets/icons/stethoscope.png";
+import user from "../../../assets/icons/user.png";
+import invoice from "../../../assets/icons/invoice.png";
 import "./Home.css";
 const Home = () => {
   return (

@@ -1,4 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
+import About from "../pages/About/About";
+import Login from "../pages/Login/Login";
+import SignUp from "../pages/SignUp/SignUp";
+import Home from "../pages/Home/Home/Home";
+import Main from "./Main";
 
 export const router = createBrowserRouter([
   {
@@ -17,69 +22,10 @@ export const router = createBrowserRouter([
         path: "/signup",
         element: <SignUp></SignUp>,
       },
-      {
-        path: "/appointment",
-        element: (
-          <PrivateRoute>
-            <Appointment> </Appointment>{" "}
-          </PrivateRoute>
-        ),
-      },
+
       {
         path: "/about",
         element: <About></About>,
-      },
-    ],
-  },
-  {
-    path: "/dashboard",
-    element: (
-      <PrivateRoute>
-        <DashboardLayout> </DashboardLayout>{" "}
-      </PrivateRoute>
-    ),
-    errorElement: <DisplayError></DisplayError>,
-    children: [
-      {
-        path: "/dashboard",
-        element: <MyAppointment></MyAppointment>,
-      },
-      {
-        path: "/dashboard/allUsers",
-        element: (
-          <AdminRoute>
-            <AllUsers></AllUsers>
-          </AdminRoute>
-        ),
-      },
-      {
-        path: "/dashboard/adddoctor",
-        element: (
-          <AdminRoute>
-            {" "}
-            <AddDoctor></AddDoctor>{" "}
-          </AdminRoute>
-        ),
-      },
-      {
-        path: "/dashboard/managedoctors",
-        element: (
-          <AdminRoute>
-            {" "}
-            <ManageDoctors></ManageDoctors>{" "}
-          </AdminRoute>
-        ),
-      },
-      {
-        path: "/dashboard/payment/:id",
-        element: (
-          <AdminRoute>
-            {" "}
-            <Payment></Payment>{" "}
-          </AdminRoute>
-        ),
-        loader: ({ params }) =>
-          fetch(`http://doctors-portal2.sifatniloy.com/bookings/${params.id}`),
       },
     ],
   },

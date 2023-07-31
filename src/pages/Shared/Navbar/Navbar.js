@@ -16,6 +16,9 @@ const Navbar = () => {
       <li>
         <Link to="">Services and Specialities</Link>
       </li>
+      <li>
+        
+      </li>
     </>
   );
   return (
@@ -55,7 +58,11 @@ const Navbar = () => {
           {menuItems}
         </ul>
       </div>
-      <div className="navbar-end">{/* <a className="btn">Button</a> */}</div>
+      <div className="navbar-end">
+        <a className="btn">
+          <Link to="/login">Admin Login</Link>
+        </a>
+      </div>
     </div>
   );
 };
