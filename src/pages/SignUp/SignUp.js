@@ -10,6 +10,16 @@ const SignUp = () => {
           <div className="form-control w-full max-w-xs">
             <label className="label">
               {" "}
+              <span className="label-text">Name </span>{" "}
+            </label>
+            <input
+              type="name"
+              className="input input-bordered input-success w-full max-w-xs"
+            />
+          </div>
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              {" "}
               <span className="label-text">Email </span>{" "}
             </label>
             <input

@@ -13,6 +13,12 @@
 }
 .box {
   height: 200px;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.box:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .icon {
   max-width: 50px;

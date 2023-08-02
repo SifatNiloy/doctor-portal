@@ -11,16 +11,12 @@ const Login = () => {
                     
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Email </span> </label>
-                        <input type="email" 
-                           
-                        className="input input-bordered input-success w-full max-w-xs" />  
+                        <input type="email" className="input input-bordered input-success w-full max-w-xs" />  
                                                 
                     </div>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Password </span> </label>
-                        <input type="password" 
-                            
-                        className="input input-bordered input-success w-full max-w-xs" />  
+                        <input type="password"  className="input input-bordered input-success w-full max-w-xs" />  
                             
                         <label className="label"> <span className="label-text"> Forgot Password ? </span> </label>   
                                      

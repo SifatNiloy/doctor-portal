@@ -48,7 +48,7 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-2xl text-blue-800">
+        <a className=" normal-case text-2xl font-bold text-blue-800">
           Morden Medicare <br /> resource portal
         </a>
       </div>
